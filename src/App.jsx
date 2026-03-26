@@ -7,6 +7,7 @@ import Radio from "./Radio";
 import Object from "./Object";
 import Time from "./Time";
 import Effect from "./Effect";
+import A from "./A";
 function App() {
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
       <Object></Object>
       <Time></Time>
       <Effect />
-
+      <A></A>
      </div>
     </>
   )
