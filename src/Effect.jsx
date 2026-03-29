@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 export default function Effect(){
     const [items, setItems] = useState([]);
     const [content, setContent] = useState('posts');
@@ -25,7 +25,6 @@ export default function Effect(){
             <button className="btn btn-primary" onClick={ ()=> setContent('comments')}>Comments</button>
           <div> 
             {content}
-
             <ul>
               {items && items.map(item=>{
                 return <li key={item.id}>{item.name} {item.title}</li>
