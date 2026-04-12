@@ -8,7 +8,17 @@ import Object from "./Object";
 import Time from "./Time";
 import Effect from "./Effect";
 import A from "./A";
+import B from "./B";
+import Axios from "./Axios";
+import Form from "./Form";
+import Alluser from "./User/Alluser";
+
 function App() {
+
+  const displayAlert = (name)=>{
+    alert(name)
+  }
+
   return (
     <>
     <div className="container">
@@ -23,6 +33,13 @@ function App() {
       <Time></Time>
       <Effect />
       <A></A>
+      <B displayAlert={displayAlert} name={'Aradhya'}></B>
+      <B displayAlert={displayAlert} name={'Baliram'}></B>
+      <Axios></Axios>
+      <Form />
+      <hr />
+      <Alluser />
+
      </div>
     </>
   )

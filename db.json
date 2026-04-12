@@ -1,0 +1,40 @@
+{
+  "datahub": [
+    {
+      "id": 1,
+      "name": "Baliram Kamble",
+      "mobile": "9766909796",
+      "email": "balram.kamble@gmail.com",
+      "channel": "Testy Code",
+      "course": "Angular",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Aradhya Kamble",
+      "mobile": "8149787397",
+      "email": "ak@gmail.com",
+      "channel": "Testy Code",
+      "course": "FullStack",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Soham",
+      "mobile": "9604212696",
+      "email": "soham@gmail.com",
+      "channel": "test code",
+      "course": "React",
+      "rating": 5
+    },
+    {
+      "name": "aadishree",
+      "mobile": "9766909796",
+      "email": "balram.kamble@gmail.com",
+      "channel": "123",
+      "course": "MBBS",
+      "rating": "5",
+      "id": 4
+    }
+  ]
+}

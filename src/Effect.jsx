@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 export default function Effect(){
     const [items, setItems] = useState([]);
     const [content, setContent] = useState('posts');
     const [count, setCount] = useState(0);
+    const rcount = useRef(0);
+
     useEffect(()=>{
         console.log('Content mounted');
     }, [])
@@ -16,10 +18,14 @@ export default function Effect(){
         return()=>{
             console.log('Content unmounted');
         }
-    },[content])
+    },[content]);
+    useEffect(()=>{
+        rcount.current = rcount.current + 1;
+    })
     return(
         <div>
-            <button className="btn btn-primary" onClick={ ()=> setCount(count+1)}>Count{count}</button>
+            {rcount.current}
+            <button className="btn btn-primary" onClick={ ()=> setCount((pre)=>pre+1)}>Count{count}</button>
             <button className="btn btn-primary" onClick={ ()=> setContent('posts')}>Posts</button>
             <button className="btn btn-primary" onClick={ ()=> setContent('users')}>Users</button>
             <button className="btn btn-primary" onClick={ ()=> setContent('comments')}>Comments</button>
